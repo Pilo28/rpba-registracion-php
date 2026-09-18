@@ -1,0 +1,12 @@
+{
+    "name": "rpba/manual-registracion-php",
+    "description": "Clon en PHP + PostgreSQL del Manual de Registración.",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "ext-pdo": "*",
+        "ext-pdo_pgsql": "*",
+        "ext-curl": "*",
+        "ext-mbstring": "*"
+    }
+}

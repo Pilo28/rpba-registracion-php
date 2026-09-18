@@ -1,0 +1,1828 @@
+{
+  "categorias": [
+    {
+      "id": "general",
+      "titulo": "Documentación General",
+      "descripcion": "Requisitos formales y documental aplicable a todos los actos notariales.",
+      "orden": 0
+    },
+    {
+      "id": "dominio",
+      "titulo": "Dominio y Transmisión",
+      "descripcion": "Compraventa, donación, adjudicación, usucapión y demás actos transmisivos del dominio.",
+      "orden": 1
+    },
+    {
+      "id": "fideicomiso",
+      "titulo": "Dominio Fiduciario",
+      "descripcion": "Transferencia, sustitución y extinción del dominio fiduciario sobre inmuebles.",
+      "orden": 2
+    },
+    {
+      "id": "hipoteca",
+      "titulo": "Hipoteca",
+      "descripcion": "Constitución, reinscripción, cancelación y letras hipotecarias.",
+      "orden": 3
+    },
+    {
+      "id": "usufructo",
+      "titulo": "Usufructo",
+      "descripcion": "Constitución, reserva, extinción, renuncia y transmisión del usufructo.",
+      "orden": 4
+    },
+    {
+      "id": "propiedad-horizontal",
+      "titulo": "Propiedad Horizontal",
+      "descripcion": "Afectación, comunicación de plano, suspensión y desafectación al régimen de PH.",
+      "orden": 5
+    },
+    {
+      "id": "cautelares",
+      "titulo": "Medidas Cautelares",
+      "descripcion": "Embargos, inhibiciones, anotaciones de litis y demás medidas cautelares sobre inmuebles.",
+      "orden": 6
+    },
+    {
+      "id": "ley24374",
+      "titulo": "Regularización Dominial",
+      "descripcion": "Actos del régimen de regularización dominial conforme Ley 24.374.",
+      "orden": 7
+    },
+    {
+      "id": "vivienda",
+      "titulo": "Vivienda",
+      "descripcion": "Afectación y desafectación al régimen de protección de la vivienda (bien de familia).",
+      "orden": 8
+    },
+    {
+      "id": "testimonios",
+      "titulo": "Testimonios",
+      "descripcion": "Segundo y ulterior testimonio de documentos notariales, judiciales y administrativos.",
+      "orden": 9
+    },
+    {
+      "id": "inscripciones",
+      "titulo": "Inscripciones Provisorias",
+      "descripcion": "Solicitud y prórroga de inscripciones provisionales.",
+      "orden": 10
+    },
+    {
+      "id": "anotaciones",
+      "titulo": "Anotaciones y Complementarias",
+      "descripcion": "Anotaciones marginales, complementarias, aclaratorias y rectificatorias.",
+      "orden": 11
+    }
+  ],
+  "capitulos": [
+    {
+      "slug": "documento-notarial",
+      "titulo": "Calificación de documento notarial: Documental y requisitos formales",
+      "codigoActo": null,
+      "categoria": "general",
+      "pagina": 14,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Aplicable según el acto instrumentado",
+      "rubrosFolioReal": [
+        "Según el acto"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": null,
+      "descripcion": "Establece los requisitos formales generales que debe cumplir todo documento notarial para ser admitido a registración. Comprende el análisis de la carátula rogatoria, la minuta de inscripción, la primera copia de escritura y demás recaudos extrínsecos e intrínsecos exigidos por la Ley 17.801 y las DTR vigentes.",
+      "documentos": [
+        "Primera copia de escritura pública (testimonio)",
+        "Carátula rogatoria completa y firmada por el autorizante",
+        "Minuta de inscripción (cuando corresponda por tipo de acto)",
+        "Comprobante de pago de tasas registrales",
+        "Acreditación de personería del requirente (si no es el escribano autorizante)",
+        "Documentación complementaria según el acto (certificados, autorizaciones, etc.)"
+      ],
+      "modeloAsiento": "Los datos de la calificación documental no generan asiento propio; su resultado habilita o impide la inscripción del acto contenido en el documento calificado.",
+      "orden": 0
+    },
+    {
+      "slug": "compraventa",
+      "titulo": "Calificación de compraventa",
+      "codigoActo": "100",
+      "categoria": "dominio",
+      "pagina": 36,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Transmisión del dominio de inmuebles a título oneroso mediante escritura pública (art. 1017 CCCN). El transmitente debe ser el titular registral o actuar con poder suficiente. El Registro califica la legalidad extrínseca del instrumento y verifica la ausencia de impedimentos para la disposición del bien.",
+      "documentos": [
+        "Primera copia de escritura pública de compraventa",
+        "Carátula rogatoria con datos completos del inmueble y las partes",
+        "Certificado de dominio vigente al momento del otorgamiento",
+        "Certificado catastral actualizado",
+        "Comprobante de pago de tasas registrales",
+        "Acreditación de CUIT/CUIL de los otorgantes (cuando corresponda por monto)",
+        "Constancia de cumplimiento de obligaciones fiscales (ARBA, AFIP, según DTR)",
+        "Poderes o autorizaciones (si actúa representante)"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe transmisión de dominio a favor de [...] (DNI/CUIT [...]), por escritura N° [...] de fecha [...] pasada ante Esc. [...] (Reg. N° [...], Partido [...]), Precio: $[...]. Inscripción provisional por 45 días hábiles.",
+      "observaciones": "Si el inmueble pertenece a una sociedad conyugal bajo el régimen de comunidad, deberá prestarse el asentimiento conyugal (art. 470 CCCN). Verificar ausencia de inhibiciones del transmitente.",
+      "orden": 1
+    },
+    {
+      "slug": "regimen-patrimonial",
+      "titulo": "Régimen patrimonial matrimonial y unión convivencial",
+      "codigoActo": null,
+      "categoria": "dominio",
+      "pagina": 66,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Aplicable según el acto principal",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": null,
+      "descripcion": "Módulo especial que analiza el impacto del régimen patrimonial matrimonial (comunidad o separación de bienes) y de la unión convivencial sobre los actos de disposición de inmuebles. Determina cuándo se requiere asentimiento del cónyuge o conviviente conforme arts. 456, 470 y 522 CCCN.",
+      "documentos": [
+        "Documentación del acto principal al que complementa",
+        "Acta de matrimonio o constancia de unión convivencial inscripta (según corresponda)",
+        "Convención matrimonial de separación de bienes (si hubiera)",
+        "Asentimiento conyugal o de conviviente en el instrumento o por separado"
+      ],
+      "modeloAsiento": "Este módulo no genera asiento propio; sus disposiciones se aplican en el acto registral principal.",
+      "orden": 2
+    },
+    {
+      "slug": "tracto-abreviado",
+      "titulo": "Calificación de tracto abreviado",
+      "codigoActo": "713",
+      "categoria": "dominio",
+      "pagina": 80,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Mecanismo excepcional que permite instrumentar en un único acto la cadena de transmisiones que no fueron oportunamente inscriptas, conforme art. 16 Ley 17.801. Procede en los casos taxativamente enumerados por la norma: partición hereditaria, partición de condominio, disolución de sociedad conyugal, o cuando el titular registral hubiera fallecido.",
+      "documentos": [
+        "Primera copia de escritura pública que instrumenta el tracto abreviado",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente a nombre del último titular inscripto",
+        "Certificado catastral actualizado",
+        "Documentación que acredita los eslabones intermedios no inscriptos (declaratorias, particiones, etc.)",
+        "Acreditación del vínculo o calidad invocada para el tracto abreviado",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe transmisión de dominio por tracto abreviado (art. 16 Ley 17.801) a favor de [...], según escritura N° [...] de fecha [...], Esc. [...], Reg. N° [...], Partido [...]. Inscripción provisional por 45 días hábiles.",
+      "observaciones": "El tracto abreviado es de interpretación restrictiva. No procede cuando existe posibilidad de seguir el tracto sucesivo ordinario.",
+      "orden": 3
+    },
+    {
+      "slug": "declaratoria-herederos-notarial",
+      "titulo": "Inscripción de declaratoria de herederos o testamentos — vía notarial",
+      "codigoActo": "707",
+      "categoria": "dominio",
+      "pagina": 86,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Inscripción de la declaratoria de herederos o del testamento protocolizado por vía notarial (sucesión extrajudicial conforme arts. 2313 y ss. CCCN). Acredita la transmisión mortis causa del dominio a los herederos declarados sobre los inmuebles del causante.",
+      "documentos": [
+        "Primera copia del acta notarial de declaratoria de herederos o protocolo del testamento",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente a nombre del causante",
+        "Partida de defunción del causante",
+        "Acreditación del vínculo de los herederos declarados",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe declaratoria de herederos del causante [...] (fallecido el [...]) a favor de [...], según acta notarial N° [...] de fecha [...], Esc. [...], Reg. N° [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 4
+    },
+    {
+      "slug": "declaratoria-herederos-judicial",
+      "titulo": "Inscripción de declaratoria de herederos o testamentos — vía judicial",
+      "codigoActo": "35",
+      "categoria": "dominio",
+      "pagina": 93,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Inscripción de la declaratoria de herederos dictada judicialmente o del testamento aprobado por auto judicial. Acredita la transmisión hereditaria del dominio sobre los inmuebles del causante a favor de los herederos declarados por sentencia firme.",
+      "documentos": [
+        "Testimonio judicial de la declaratoria de herederos o del auto de aprobación testamentaria",
+        "Carátula rogatoria",
+        "Certificado de dominio a nombre del causante",
+        "Partida de defunción del causante",
+        "Oficio o mandamiento judicial dirigido al Registro",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe declaratoria de herederos dictada en autos \"[...]\" (Expte. N° [...]) a favor de [...], Juzgado [...], auto de fecha [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 5
+    },
+    {
+      "slug": "declaratoria-herederos-cesion",
+      "titulo": "Declaratoria de herederos con cesión de acciones y derechos hereditarios",
+      "codigoActo": "36",
+      "categoria": "dominio",
+      "pagina": 104,
+      "clasificacionIngreso": [
+        "Judicial",
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Inscripción conjunta de la declaratoria de herederos y la cesión de acciones y derechos hereditarios otorgada por los herederos en favor de un cesionario. Permite inscribir directamente el dominio a nombre del cesionario sin necesidad de inscribir previamente la declaratoria a nombre de los herederos cedentes.",
+      "documentos": [
+        "Testimonio de la declaratoria de herederos (judicial o notarial)",
+        "Primera copia de escritura de cesión de acciones y derechos hereditarios",
+        "Carátula rogatoria",
+        "Certificado de dominio a nombre del causante",
+        "Partida de defunción del causante",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe dominio a favor de [...] (cesionario), en virtud de declaratoria de herederos de [...] y cesión de acciones y derechos hereditarios por escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 6
+    },
+    {
+      "slug": "adjudicacion-particion",
+      "titulo": "Calificación de adjudicación por partición",
+      "codigoActo": "716",
+      "categoria": "dominio",
+      "pagina": 108,
+      "clasificacionIngreso": [
+        "Notarial",
+        "Judicial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Adjudicación de inmuebles a los condóminos o coherederos como resultado de la partición del condominio o de la herencia. Consolida el dominio exclusivo en cabeza del adjudicatario sobre la parte material que le fue asignada.",
+      "documentos": [
+        "Primera copia de escritura de partición y adjudicación (o testimonio judicial)",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Certificado catastral actualizado",
+        "Declaratoria de herederos previa (si el condominio proviene de una sucesión)",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe adjudicación por partición a favor de [...], según escritura/acuerdo de partición N° [...] de fecha [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 7
+    },
+    {
+      "slug": "compraventa-nuda-propiedad",
+      "titulo": "Calificación de compraventa de nuda propiedad",
+      "codigoActo": "103",
+      "categoria": "dominio",
+      "pagina": 171,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Transmisión onerosa de la nuda propiedad del inmueble, reservándose el transmitente el derecho de usufructo. El adquirente recibe el dominio gravado con el usufructo inscripto o constituido simultáneamente.",
+      "documentos": [
+        "Primera copia de escritura de compraventa de nuda propiedad",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Certificado catastral actualizado",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe transmisión de nuda propiedad a favor de [...], reservándose el usufructo el transmitente [...], por escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 8
+    },
+    {
+      "slug": "usucapion",
+      "titulo": "Calificación de usucapión",
+      "codigoActo": "38",
+      "categoria": "dominio",
+      "pagina": 174,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": true,
+      "descripcion": "Adquisición del dominio por prescripción adquisitiva mediante sentencia judicial firme (art. 1897 CCCN). La sentencia debe acreditar la posesión pública, pacífica, continua e ininterrumpida durante el plazo legal.",
+      "documentos": [
+        "Testimonio de la sentencia de usucapión con constancia de firmeza",
+        "Oficio o mandamiento dirigido al Registro",
+        "Plano de mensura aprobado por la Dirección Provincial de Catastro",
+        "Certificado de dominio del inmueble objeto de usucapión",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe dominio adquirido por usucapión a favor de [...], por sentencia de fecha [...] dictada en autos \"[...]\", Juzgado [...]. Sin inscripción provisional.",
+      "observaciones": "La sentencia de usucapión que crea un nuevo inmueble genera apertura de folio real. Si el inmueble ya tiene folio, se anota en el dominio existente.",
+      "orden": 9
+    },
+    {
+      "slug": "usucapion-protocolizacion",
+      "titulo": "Calificación de protocolización de usucapión",
+      "codigoActo": "728",
+      "categoria": "dominio",
+      "pagina": 185,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": true,
+      "descripcion": "Protocolización notarial de la sentencia de usucapión firme. El escribano protocoliza el testimonio judicial y otorga la escritura pública que sirve de título para la inscripción registral del dominio adquirido por prescripción.",
+      "documentos": [
+        "Primera copia de escritura de protocolización de sentencia de usucapión",
+        "Carátula rogatoria",
+        "Plano de mensura aprobado",
+        "Certificado de dominio",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe dominio adquirido por usucapión (protocolización notarial) a favor de [...], por escritura N° [...], Esc. [...], en base a sentencia firme de fecha [...].",
+      "orden": 10
+    },
+    {
+      "slug": "derecho-superficie",
+      "titulo": "Calificación de constitución de derecho real de superficie",
+      "codigoActo": "417",
+      "categoria": "dominio",
+      "pagina": 196,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio",
+        "Restricciones al dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Constitución del derecho real de superficie (arts. 2114 a 2128 CCCN), que otorga al superficiario la facultad de construir, plantar o forestar sobre inmueble ajeno, adquiriendo la propiedad de lo construido o plantado por el plazo convenido.",
+      "documentos": [
+        "Primera copia de escritura de constitución de derecho real de superficie",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe constitución de derecho real de superficie a favor de [...] por plazo de [...] años, según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 11
+    },
+    {
+      "slug": "permuta",
+      "titulo": "Permuta de inmuebles",
+      "codigoActo": "107/120",
+      "categoria": "dominio",
+      "pagina": 359,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Transmisión recíproca de dominio entre dos o más partes que intercambian inmuebles (art. 1172 CCCN). Cada parte es simultáneamente transmitente y adquirente. Puede incluir compensación en dinero (saldo de precio).",
+      "documentos": [
+        "Primera copia de escritura de permuta",
+        "Carátula rogatoria para cada inmueble permutado",
+        "Certificados de dominio vigentes de ambos inmuebles",
+        "Certificados catastrales actualizados de ambos inmuebles",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe transmisión de dominio por permuta a favor de [...], según escritura N° [...], Esc. [...], permutando por el inmueble de folio N° [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 12
+    },
+    {
+      "slug": "subasta",
+      "titulo": "Calificación de subasta",
+      "codigoActo": "9",
+      "categoria": "dominio",
+      "pagina": 363,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Transferencia coactiva del dominio de inmuebles ordenada judicialmente como resultado de un remate o subasta pública. El bien se adjudica al mejor postor y el juez aprueba la venta mediante auto que sirve de título para la inscripción.",
+      "documentos": [
+        "Testimonio del auto de aprobación de remate y de la subasta",
+        "Oficio judicial dirigido al Registro",
+        "Acta de subasta con datos del inmueble y del adquirente",
+        "Certificado de dominio vigente",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe dominio adquirido en subasta judicial a favor de [...], según auto de aprobación de fecha [...], autos \"[...]\", Juzgado [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 13
+    },
+    {
+      "slug": "subasta-protocolizacion",
+      "titulo": "Calificación de subasta — protocolización notarial",
+      "codigoActo": "712",
+      "categoria": "dominio",
+      "pagina": 366,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Protocolización notarial del auto judicial de aprobación de remate. El escribano protocoliza las actuaciones judiciales y otorga la escritura pública que sirve de título perfecto para la inscripción registral del dominio adquirido en subasta.",
+      "documentos": [
+        "Primera copia de escritura de protocolización del auto de subasta",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe dominio adquirido en subasta judicial (protocolización notarial) a favor de [...], por escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 14
+    },
+    {
+      "slug": "adjudicacion-condominio",
+      "titulo": "Adjudicación de inmuebles por división de condominio",
+      "codigoActo": "705",
+      "categoria": "dominio",
+      "pagina": 398,
+      "clasificacionIngreso": [
+        "Notarial",
+        "Judicial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "División del condominio mediante adjudicación de partes materiales a cada condómino. Extingue el estado de indivisión y otorga dominio exclusivo sobre la fracción adjudicada. Puede realizarse por escritura pública de mutuo acuerdo o por sentencia judicial.",
+      "documentos": [
+        "Primera copia de escritura de división y adjudicación (o testimonio judicial)",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Certificado catastral actualizado con plano de subdivisión aprobado",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe adjudicación por división de condominio a favor de [...], según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 15
+    },
+    {
+      "slug": "adjudicacion-sociedad-conyugal",
+      "titulo": "Adjudicación de inmuebles por disolución de sociedad conyugal",
+      "codigoActo": "709",
+      "categoria": "dominio",
+      "pagina": 404,
+      "clasificacionIngreso": [
+        "Notarial",
+        "Judicial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Liquidación y adjudicación de inmuebles gananciales a los cónyuges como resultado de la disolución de la comunidad de bienes (por divorcio, separación de bienes, muerte o nulidad de matrimonio). Consolida el dominio exclusivo en cabeza del cónyuge adjudicatario.",
+      "documentos": [
+        "Primera copia de escritura de liquidación y adjudicación (o testimonio judicial)",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Certificado catastral actualizado",
+        "Sentencia de divorcio o partición judicial (si correspondiere)",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe adjudicación por disolución de comunidad conyugal a favor de [...], según escritura N° [...] / sentencia de fecha [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 16
+    },
+    {
+      "slug": "donacion",
+      "titulo": "Donación",
+      "codigoActo": "200",
+      "categoria": "dominio",
+      "pagina": 414,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Transmisión gratuita del dominio de inmuebles mediante escritura pública (art. 1552 CCCN). Requiere aceptación expresa del donatario, que puede hacerse en el mismo acto o por acto posterior. Las donaciones entre cónyuges son revocables.",
+      "documentos": [
+        "Primera copia de escritura pública de donación con aceptación",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Certificado catastral actualizado",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe transmisión de dominio por donación a favor de [...], según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "observaciones": "Las donaciones pueden ser revocadas por ingratitud del donatario o por supernacencia de hijos (arts. 1569 y 1570 CCCN). Verificar si hay cargos o condiciones.",
+      "orden": 17
+    },
+    {
+      "slug": "donacion-nuda-propiedad",
+      "titulo": "Donación de nuda propiedad",
+      "codigoActo": "202",
+      "categoria": "dominio",
+      "pagina": 419,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Transmisión gratuita de la nuda propiedad, reservándose el donante el usufructo vitalicio o por plazo determinado. El donatario adquiere la propiedad gravada con el usufructo, que se consolida a su favor al extinguirse éste.",
+      "documentos": [
+        "Primera copia de escritura de donación de nuda propiedad con reserva de usufructo",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Certificado catastral actualizado",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe donación de nuda propiedad a favor de [...], con reserva de usufructo vitalicio a favor del donante [...], por escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 18
+    },
+    {
+      "slug": "donacion-aceptacion-diferida",
+      "titulo": "Donación con aceptación diferida / Aceptación de donación",
+      "codigoActo": "203/204",
+      "categoria": "dominio",
+      "pagina": 424,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Donación cuya aceptación no se realiza en el mismo acto sino mediante escritura posterior (art. 1545 CCCN). La donación queda perfeccionada y puede ser inscripta una vez que la aceptación es notificada al donante y se presentan ambos instrumentos.",
+      "documentos": [
+        "Primera copia de escritura de donación (código 203)",
+        "Primera copia de escritura de aceptación de donación (código 204)",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Certificado catastral actualizado",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe donación a favor de [...], según escritura de donación N° [...] y escritura de aceptación N° [...], ambas del Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 19
+    },
+    {
+      "slug": "donacion-revocacion",
+      "titulo": "Distracto/Revocación/Reversión de donación",
+      "codigoActo": "201",
+      "categoria": "dominio",
+      "pagina": 429,
+      "clasificacionIngreso": [
+        "Notarial",
+        "Judicial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Extinción de los efectos de la donación por acuerdo de partes (distracto), por incumplimiento de cargos, ingratitud del donatario (revocación) o por cláusula de reversión pactada para caso de premoriencia del donatario.",
+      "documentos": [
+        "Primera copia de escritura de distracto/revocación o testimonio judicial",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente a nombre del donatario",
+        "Sentencia judicial de revocación (si es por ingratitud)",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe revocación/distracto de donación, retornando el dominio a [...], según escritura N° [...] / sentencia de fecha [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 20
+    },
+    {
+      "slug": "dominio-fiduciario",
+      "titulo": "Transferencia de dominio fiduciario inmueble",
+      "codigoActo": "108-30",
+      "categoria": "fideicomiso",
+      "pagina": 202,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Transferencia del dominio fiduciario de inmuebles al fiduciario en el marco de un contrato de fideicomiso (arts. 1666 y ss. CCCN). El fiduciario recibe el dominio imperfecto con la obligación de administrarlo y transmitirlo al beneficiario o fideicomisario al cumplirse el plazo o condición.",
+      "documentos": [
+        "Primera copia de escritura de transferencia de dominio fiduciario",
+        "Carátula rogatoria",
+        "Contrato de fideicomiso (o instrumento que lo contiene)",
+        "Certificado de dominio vigente",
+        "Certificado catastral actualizado",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe dominio fiduciario a favor de [...] (fiduciario) según contrato de fideicomiso de fecha [...], por escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 21
+    },
+    {
+      "slug": "dominio-fiduciario-sustitucion",
+      "titulo": "Transferencia de dominio fiduciario por sustitución del fiduciario",
+      "codigoActo": "108-35",
+      "categoria": "fideicomiso",
+      "pagina": 207,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Transferencia del dominio fiduciario del fiduciario saliente al fiduciario sustituto, por renuncia, remoción o incapacidad del primero. El fiduciario sustituto asume las mismas obligaciones que el original respecto del contrato de fideicomiso.",
+      "documentos": [
+        "Primera copia de escritura de sustitución de fiduciario y transferencia del dominio fiduciario",
+        "Carátula rogatoria",
+        "Acreditación de la causal de sustitución",
+        "Certificado de dominio vigente a nombre del fiduciario saliente",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe transferencia de dominio fiduciario por sustitución del fiduciario [...] por [...], según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 22
+    },
+    {
+      "slug": "dominio-fiduciario-extincion",
+      "titulo": "Extinción de transferencia de dominio fiduciario de inmuebles",
+      "codigoActo": "119",
+      "categoria": "fideicomiso",
+      "pagina": 212,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Extinción del fideicomiso y retransmisión del dominio al fiduciante o al fideicomisario al cumplirse el plazo, la condición resolutoria o cualquier otra causal de extinción prevista en el contrato (art. 1697 CCCN).",
+      "documentos": [
+        "Primera copia de escritura de extinción del fideicomiso y retransmisión del dominio",
+        "Carátula rogatoria",
+        "Acreditación del cumplimiento de la causal de extinción",
+        "Certificado de dominio vigente a nombre del fiduciario",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe extinción del dominio fiduciario y transmisión a favor de [...] (fideicomisario/fiduciante), por escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 23
+    },
+    {
+      "slug": "dominio-fideicomiso-beneficiario",
+      "titulo": "Transferencia de dominio a beneficiario de fideicomiso",
+      "codigoActo": "121",
+      "categoria": "fideicomiso",
+      "pagina": 216,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Transferencia del dominio pleno por el fiduciario al beneficiario o fideicomisario designado en el contrato, como resultado del cumplimiento del objeto o fin del fideicomiso. El beneficiario recibe el dominio libre de las cargas del fideicomiso.",
+      "documentos": [
+        "Primera copia de escritura de transferencia al beneficiario",
+        "Carátula rogatoria",
+        "Acreditación del cumplimiento del objeto del fideicomiso",
+        "Certificado de dominio a nombre del fiduciario",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe transmisión de dominio a favor del beneficiario [...], por extinción del fideicomiso, según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 24
+    },
+    {
+      "slug": "hipoteca-constitucion",
+      "titulo": "Calificación de constitución de hipoteca",
+      "codigoActo": "300",
+      "categoria": "hipoteca",
+      "pagina": 113,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Gravamen (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Hipoteca"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Constitución del derecho real de hipoteca sobre inmuebles como garantía de una obligación (arts. 2205 a 2211 CCCN). Debe otorgarse por escritura pública y su inscripción es constitutiva respecto de terceros. La hipoteca debe determinarse en cuanto a su monto, plazo y tasa.",
+      "documentos": [
+        "Primera copia de escritura pública de constitución de hipoteca",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente con estado de cargas",
+        "Comprobante de pago de tasas registrales",
+        "Poderes o autorizaciones (si actúa representante)"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro hipoteca, se inscribe constitución de hipoteca a favor de [...] por $ [...] con más intereses [...], plazo [...], según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "observaciones": "La hipoteca caduca a los 20 años de inscripta si no se reinscribe (art. 2210 CCCN). Verificar especialidad en cuanto al crédito y al objeto.",
+      "orden": 25
+    },
+    {
+      "slug": "letras-hipotecarias",
+      "titulo": "Calificación de letras hipotecarias",
+      "codigoActo": "310/323",
+      "categoria": "hipoteca",
+      "pagina": 125,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Gravamen (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Hipoteca"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Inscripción de hipotecas instrumentadas mediante letras hipotecarias (Ley 24.441). Las letras hipotecarias son títulos valores con garantía hipotecaria que pueden ser endosados y circulan como título ejecutivo.",
+      "documentos": [
+        "Primera copia de escritura de constitución con letras hipotecarias",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Las letras hipotecarias propiamente dichas para su certificación registral",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro hipoteca, se inscribe constitución de hipoteca con letras hipotecarias N° [...] a favor de [...] por $ [...], según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 26
+    },
+    {
+      "slug": "hipoteca-reinscripcion",
+      "titulo": "Calificación de reinscripción de hipoteca",
+      "codigoActo": "303",
+      "categoria": "hipoteca",
+      "pagina": 129,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Gravamen (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Hipoteca"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Renovación de la inscripción hipotecaria antes de su vencimiento para evitar la caducidad registral (art. 2210 CCCN y art. 37 Ley 17.801). La reinscripción mantiene la prioridad originaria de la hipoteca.",
+      "documentos": [
+        "Primera copia de escritura de reinscripción hipotecaria",
+        "Carátula rogatoria",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro hipoteca, se reinscribe hipoteca inscripta con fecha [...] a favor de [...], por escritura N° [...], Esc. [...]. Nuevo vencimiento: [...].",
+      "orden": 27
+    },
+    {
+      "slug": "hipoteca-pagares",
+      "titulo": "Constitución de hipoteca con pagarés",
+      "codigoActo": "301",
+      "categoria": "hipoteca",
+      "pagina": 133,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Gravamen (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Hipoteca"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Constitución de hipoteca donde el crédito garantizado está representado por uno o más pagarés. Los pagarés se incorporan al acto notarial y la hipoteca garantiza el pago de los mismos.",
+      "documentos": [
+        "Primera copia de escritura de hipoteca con pagarés",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Los pagarés (identificados en la escritura)",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro hipoteca, se inscribe hipoteca con pagarés a favor de [...] por $ [...], pagarés N° [...], según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 28
+    },
+    {
+      "slug": "hipoteca-cancelacion",
+      "titulo": "Calificación de cancelación de hipoteca",
+      "codigoActo": "311",
+      "categoria": "hipoteca",
+      "pagina": 139,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Gravamen (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Hipoteca"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Extinción registral de la hipoteca por pago de la obligación garantizada u otra causa de extinción. La cancelación puede ser convencional (por escritura con el acreedor) o judicial (por sentencia).",
+      "documentos": [
+        "Primera copia de escritura de cancelación de hipoteca",
+        "Carátula rogatoria",
+        "Comprobante de pago de tasas registrales",
+        "Poderes o autorizaciones del acreedor cancelante (si actúa representante)"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro hipoteca, se cancela hipoteca inscripta con fecha [...] a favor de [...], por escritura N° [...], Esc. [...]. Sin inscripción provisional.",
+      "orden": 29
+    },
+    {
+      "slug": "hipoteca-cancelacion-letra",
+      "titulo": "Cancelación de hipoteca con letra hipotecaria",
+      "codigoActo": "324",
+      "categoria": "hipoteca",
+      "pagina": 146,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Gravamen (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Hipoteca"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Cancelación de hipoteca instrumentada con letras hipotecarias, mediante presentación de las letras con constancia de pago o por cancelación notarial con entrega de letras canceladas. Ley 24.441.",
+      "documentos": [
+        "Primera copia de escritura de cancelación o las letras hipotecarias canceladas",
+        "Carátula rogatoria",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro hipoteca, se cancela hipoteca con letras hipotecarias inscripta con fecha [...], según escritura N° [...] / presentación de letras canceladas.",
+      "orden": 30
+    },
+    {
+      "slug": "usufructo-constitucion",
+      "titulo": "Calificación de constitución de usufructo",
+      "codigoActo": "400",
+      "categoria": "usufructo",
+      "pagina": 150,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Constitución del derecho real de usufructo que otorga al usufructuario el uso y goce del inmueble ajeno sin alterar su sustancia (art. 2129 CCCN). Puede ser vitalicio o por plazo. Se inscribe en el folio real como limitación al dominio.",
+      "documentos": [
+        "Primera copia de escritura de constitución de usufructo",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe constitución de usufructo a favor de [...] (vitalicio / por plazo de [...]), según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 31
+    },
+    {
+      "slug": "usufructo-reserva",
+      "titulo": "Calificación de reserva de usufructo",
+      "codigoActo": "411",
+      "categoria": "usufructo",
+      "pagina": 156,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Reserva de usufructo por parte del transmitente al tiempo de transferir la nuda propiedad. El transmitente se reserva el uso y goce del inmueble, generalmente con carácter vitalicio.",
+      "documentos": [
+        "Primera copia de escritura con cláusula de reserva de usufructo",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe reserva de usufructo vitalicio a favor del transmitente [...], según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 32
+    },
+    {
+      "slug": "usufructo-extincion",
+      "titulo": "Calificación de extinción de usufructo",
+      "codigoActo": "401",
+      "categoria": "usufructo",
+      "pagina": 160,
+      "clasificacionIngreso": [
+        "Notarial",
+        "Judicial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Extinción del usufructo por muerte del usufructuario (si es vitalicio), vencimiento del plazo, consolidación, destrucción del inmueble, abuso del usufructuario u otras causas (art. 2152 CCCN). Consolida el dominio pleno en el nudo propietario.",
+      "documentos": [
+        "Escritura de extinción o acta notarial de fallecimiento con partida de defunción",
+        "Carátula rogatoria",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se cancela el usufructo inscripto con fecha [...] a favor de [...], por extinción (fallecimiento / vencimiento de plazo / ...), según escritura N° [...] / acta notarial de fecha [...]. Dominio consolidado.",
+      "orden": 33
+    },
+    {
+      "slug": "usufructo-renuncia",
+      "titulo": "Calificación de renuncia de usufructo",
+      "codigoActo": "414",
+      "categoria": "usufructo",
+      "pagina": 163,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Extinción voluntaria del usufructo por renuncia expresa del usufructuario mediante escritura pública. Consolida el dominio pleno en cabeza del nudo propietario.",
+      "documentos": [
+        "Primera copia de escritura de renuncia de usufructo",
+        "Carátula rogatoria",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se cancela el usufructo inscripto con fecha [...] a favor de [...], por renuncia según escritura N° [...], Esc. [...]. Dominio consolidado en [...]. Sin inscripción provisional.",
+      "orden": 34
+    },
+    {
+      "slug": "usufructo-transmision",
+      "titulo": "Calificación de transmisión de usufructo",
+      "codigoActo": "415",
+      "categoria": "usufructo",
+      "pagina": 166,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Transmisión del ejercicio del usufructo por el usufructuario a un tercero (art. 2142 CCCN). El usufructuario puede ceder el ejercicio de su derecho pero no el derecho en sí mismo, que se extingue igualmente con su muerte.",
+      "documentos": [
+        "Primera copia de escritura de transmisión del ejercicio del usufructo",
+        "Carátula rogatoria",
+        "Certificado de dominio con constancia del usufructo vigente",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe transmisión del ejercicio del usufructo de [...] a favor de [...], según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 35
+    },
+    {
+      "slug": "ph-afectacion",
+      "titulo": "Calificación de afectación al derecho real de propiedad horizontal",
+      "codigoActo": "512",
+      "categoria": "propiedad-horizontal",
+      "pagina": 219,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio",
+        "Datos del edificio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Afectación de un edificio al régimen de propiedad horizontal mediante escritura pública (arts. 2037 y ss. CCCN). Requiere reglamento de propiedad y administración y plano de subdivisión aprobado. Genera la apertura de folios reales para cada unidad funcional.",
+      "documentos": [
+        "Primera copia de escritura de afectación al régimen de PH con reglamento",
+        "Carátula rogatoria",
+        "Plano de subdivisión en PH aprobado por la Dirección de Geodesia",
+        "Certificado de dominio vigente",
+        "Certificado catastral del inmueble afectado",
+        "Plano de mensura y subdivisión (si se subdivide simultáneamente)",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "Se inscribe afectación al régimen de propiedad horizontal del inmueble de folio real N° [...], según escritura N° [...], Esc. [...]. Se generan folios reales para las UF N° [...] a [...]. Inscripción provisional por 45 días hábiles.",
+      "observaciones": "La apertura de folios para cada unidad funcional es automática. Verificar que el plano esté aprobado por la Dirección Provincial de Geodesia.",
+      "orden": 36
+    },
+    {
+      "slug": "ph-plano-aprobacion",
+      "titulo": "Anoticiamiento de aprobación de plano (Comunicación de plano)",
+      "codigoActo": "74",
+      "categoria": "propiedad-horizontal",
+      "pagina": 241,
+      "clasificacionIngreso": [
+        "Administrativo"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Datos del inmueble"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Comunicación al Registro de la aprobación del plano de propiedad horizontal por la Dirección de Geodesia, para su anotación en el folio real del inmueble previo a la afectación formal al régimen.",
+      "documentos": [
+        "Formulario de comunicación de aprobación de plano",
+        "Copia del plano aprobado con constancia de aprobación",
+        "Comprobante de pago de tasas registrales (si corresponde)"
+      ],
+      "modeloAsiento": "En folio real N° [...] se anota comunicación de aprobación de plano de PH N° [...], aprobado por Dirección de Geodesia con fecha [...]. Sin inscripción provisional.",
+      "orden": 37
+    },
+    {
+      "slug": "ph-plano-suspension",
+      "titulo": "Suspensión de plano de propiedad horizontal",
+      "codigoActo": "83",
+      "categoria": "propiedad-horizontal",
+      "pagina": 254,
+      "clasificacionIngreso": [
+        "Administrativo"
+      ],
+      "art2Ley17801": "Restricción (art. 2 inc. c)",
+      "rubrosFolioReal": [
+        "Datos del inmueble"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Anotación registral de la suspensión del plano de propiedad horizontal previamente comunicado, por resolución de la Dirección de Geodesia. Impide la afectación formal al régimen mientras dure la suspensión.",
+      "documentos": [
+        "Comunicación oficial de la Dirección de Geodesia con resolución de suspensión",
+        "Datos del plano suspendido",
+        "Comprobante de pago de tasas registrales (si corresponde)"
+      ],
+      "modeloAsiento": "En folio real N° [...] se anota suspensión del plano de PH N° [...] por resolución de la Dirección de Geodesia de fecha [...]. Sin inscripción provisional.",
+      "orden": 38
+    },
+    {
+      "slug": "ph-desafectacion",
+      "titulo": "Desafectación de propiedad horizontal",
+      "codigoActo": "514",
+      "categoria": "propiedad-horizontal",
+      "pagina": 262,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Extinción del régimen de propiedad horizontal mediante escritura pública otorgada por todos los propietarios de unidades funcionales (art. 2044 CCCN). Consolida el inmueble en un único folio real.",
+      "documentos": [
+        "Primera copia de escritura de desafectación del régimen de PH firmada por todos los propietarios",
+        "Carátula rogatoria",
+        "Certificados de dominio de todas las unidades funcionales",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "Se inscribe desafectación del régimen de PH del inmueble de folio N° [...] y UF N° [...] a [...], por escritura N° [...], Esc. [...]. Se clausuran los folios de las UF y se reactiva el folio madre N° [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 39
+    },
+    {
+      "slug": "embargo",
+      "titulo": "Embargo",
+      "codigoActo": "16",
+      "categoria": "cautelares",
+      "pagina": 274,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Medida cautelar (art. 2 inc. b)",
+      "rubrosFolioReal": [
+        "Gravámenes y medidas cautelares"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Traba de embargo sobre inmuebles ordenada judicialmente que impide al propietario disponer libremente del bien. Se inscribe en el folio real bajo el rubro de gravámenes y medidas cautelares. El embargo no priva al propietario de la posesión.",
+      "documentos": [
+        "Oficio judicial con firma y sello del juez o funcionario competente",
+        "Número de CUIJ (Clave Única de Identificación Judicial)",
+        "Datos completos del inmueble (número de partido, matrícula o datos identificatorios)",
+        "Datos del embargante y del embargado",
+        "Monto del embargo",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro cautelares, se inscribe embargo por $ [...] a favor de [...] contra [...], según oficio del Juzgado [...], autos \"[...]\" (CUIJ [...]), de fecha [...]. Sin inscripción provisional.",
+      "orden": 40
+    },
+    {
+      "slug": "cautelar-reinscripcion",
+      "titulo": "Reinscripción de medidas cautelares sobre inmuebles",
+      "codigoActo": "34",
+      "categoria": "cautelares",
+      "pagina": 298,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Medida cautelar (art. 2 inc. b)",
+      "rubrosFolioReal": [
+        "Gravámenes y medidas cautelares"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Renovación de la inscripción de una medida cautelar (embargo u otra) antes de su caducidad de 5 años (art. 37 Ley 17.801). La reinscripción mantiene la prioridad de la medida original.",
+      "documentos": [
+        "Oficio judicial de reinscripción con datos de la medida original",
+        "Número de CUIJ",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro cautelares, se reinscribe la medida cautelar inscripta con fecha [...] en autos \"[...]\", Juzgado [...]. Nuevo vencimiento: [...].",
+      "orden": 41
+    },
+    {
+      "slug": "embargo-ampliacion",
+      "titulo": "Ampliación de embargo",
+      "codigoActo": "17",
+      "categoria": "cautelares",
+      "pagina": 300,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Medida cautelar (art. 2 inc. b)",
+      "rubrosFolioReal": [
+        "Gravámenes y medidas cautelares"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Extensión del monto de un embargo ya inscripto por resolución judicial. Se anota como complemento de la inscripción original, ampliando la suma garantizada.",
+      "documentos": [
+        "Oficio judicial de ampliación con referencia al embargo original",
+        "Número de CUIJ",
+        "Nuevo monto de la ampliación",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro cautelares, se inscribe ampliación del embargo de fecha [...] en $ [...] adicionales, según oficio del Juzgado [...], autos \"[...]\" (CUIJ [...]).",
+      "orden": 42
+    },
+    {
+      "slug": "embargo-otros",
+      "titulo": "Otros actos relativos a embargo (Rectificación/Modificación/Pases)",
+      "codigoActo": "19",
+      "categoria": "cautelares",
+      "pagina": 302,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Medida cautelar (art. 2 inc. b)",
+      "rubrosFolioReal": [
+        "Gravámenes y medidas cautelares"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Actos complementarios o modificatorios de embargos inscriptos: rectificaciones de errores, modificaciones del monto, pases de acreedor o cambio de datos del embargo original. Se anotan como complemento marginal de la inscripción principal.",
+      "documentos": [
+        "Oficio judicial con indicación del tipo de acto y datos del embargo a modificar",
+        "Número de CUIJ",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro cautelares, se anota [rectificación/modificación/pase] del embargo de fecha [...] según oficio del Juzgado [...], autos \"[...]\" (CUIJ [...]).",
+      "orden": 43
+    },
+    {
+      "slug": "cautelar-levantamiento",
+      "titulo": "Levantamiento de medidas cautelares sobre inmuebles",
+      "codigoActo": "8/18/24/28/31",
+      "categoria": "cautelares",
+      "pagina": 306,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Medida cautelar (art. 2 inc. b)",
+      "rubrosFolioReal": [
+        "Gravámenes y medidas cautelares"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Cancelación registral de medidas cautelares (embargos, inhibiciones, anotaciones de litis, medidas de no innovar, etc.) por orden judicial. Libera el inmueble de la restricción impuesta.",
+      "documentos": [
+        "Oficio judicial de levantamiento con referencia a la medida a cancelar",
+        "Número de CUIJ de la causa",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro cautelares, se cancela la medida cautelar (embargo/inhibición/anotación de litis/etc.) inscripta con fecha [...] en autos \"[...]\", Juzgado [...]. Sin inscripción provisional.",
+      "orden": 44
+    },
+    {
+      "slug": "anotacion-litis",
+      "titulo": "Anotación de litis",
+      "codigoActo": "23",
+      "categoria": "cautelares",
+      "pagina": 311,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Medida cautelar (art. 2 inc. b)",
+      "rubrosFolioReal": [
+        "Gravámenes y medidas cautelares"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Publicidad registral de la existencia de un litigio sobre el inmueble que puede afectar su titularidad o estado. Hace oponible a terceros la existencia del proceso judicial y advierte sobre la situación litigiosa del bien.",
+      "documentos": [
+        "Oficio judicial ordenando la anotación de litis",
+        "Datos del juicio: juzgado, carátula, CUIJ",
+        "Datos del inmueble",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro cautelares, se inscribe anotación de litis en autos \"[...]\" (CUIJ [...]), Juzgado [...], de fecha [...]. Sin inscripción provisional.",
+      "orden": 45
+    },
+    {
+      "slug": "medida-no-innovar",
+      "titulo": "Medida de no innovar",
+      "codigoActo": "27",
+      "categoria": "cautelares",
+      "pagina": 313,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Restricción (art. 2 inc. c)",
+      "rubrosFolioReal": [
+        "Gravámenes y medidas cautelares"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Medida cautelar que ordena mantener el estado de hecho o de derecho del inmueble, prohibiendo su modificación hasta tanto se resuelva el litigio. Impide actos de disposición y modificación del bien.",
+      "documentos": [
+        "Oficio judicial de medida de no innovar",
+        "CUIJ de la causa",
+        "Datos del inmueble",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro cautelares, se inscribe medida de no innovar ordenada en autos \"[...]\" (CUIJ [...]), Juzgado [...], de fecha [...]. Sin inscripción provisional.",
+      "orden": 46
+    },
+    {
+      "slug": "prohibicion-contratar",
+      "titulo": "Prohibición de contratar",
+      "codigoActo": "30",
+      "categoria": "cautelares",
+      "pagina": 314,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Restricción (art. 2 inc. c)",
+      "rubrosFolioReal": [
+        "Gravámenes y medidas cautelares"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Medida cautelar que prohíbe al titular del inmueble celebrar contratos sobre el bien (venta, locación, hipoteca, etc.), ordenada judicialmente como garantía del resultado del proceso.",
+      "documentos": [
+        "Oficio judicial de prohibición de contratar",
+        "CUIJ de la causa",
+        "Datos del inmueble y del afectado",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro cautelares, se inscribe prohibición de contratar sobre [...] ordenada en autos \"[...]\" (CUIJ [...]), Juzgado [...], de fecha [...]. Sin inscripción provisional.",
+      "orden": 47
+    },
+    {
+      "slug": "cautelar-generica",
+      "titulo": "Medida cautelar genérica y anoticiamiento de subasta",
+      "codigoActo": "7/10",
+      "categoria": "cautelares",
+      "pagina": 315,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Medida cautelar (art. 2 inc. b)",
+      "rubrosFolioReal": [
+        "Gravámenes y medidas cautelares"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Inscripción de medidas cautelares atípicas no encuadradas en las categorías específicas, y comunicación de la realización de subastas judiciales sobre inmuebles para publicidad registral.",
+      "documentos": [
+        "Oficio judicial con descripción de la medida",
+        "CUIJ de la causa",
+        "Datos del inmueble",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro cautelares, se inscribe medida cautelar [descripción] / anoticiamiento de subasta ordenada en autos \"[...]\" (CUIJ [...]), Juzgado [...], de fecha [...].",
+      "orden": 48
+    },
+    {
+      "slug": "ley24374-acta-requerimiento",
+      "titulo": "Acta de requerimiento — régimen de regularización dominial (art. 6° inc. e)",
+      "codigoActo": "703",
+      "categoria": "ley24374",
+      "pagina": 324,
+      "clasificacionIngreso": [
+        "Administrativo"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": true,
+      "descripcion": "Inscripción del acta de requerimiento de regularización dominial conforme art. 6° inc. e) Ley 24.374, que ampara a quienes ocupan con ánimo de dueño inmuebles del Estado o de particulares. Inicia el proceso de regularización del dominio de viviendas de sectores de bajos recursos.",
+      "documentos": [
+        "Acta notarial de requerimiento de regularización dominial",
+        "Carátula rogatoria",
+        "Plano de mensura y subdivisión aprobado (si corresponde)",
+        "Certificado de dominio",
+        "Certificado catastral",
+        "Resolución del organismo de aplicación (Municipio o ACUMAR, según caso)",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe acta de requerimiento de regularización dominial (Ley 24.374, art. 6° inc. e) a favor de [...], según acta notarial de fecha [...]. Inscripción provisional por [...] días.",
+      "observaciones": "La Ley 24.374 fue modificada por la Ley 25.797 y sus decretos reglamentarios. El proceso culmina con el acta de consolidación.",
+      "orden": 49
+    },
+    {
+      "slug": "ley24374-acta-consolidacion",
+      "titulo": "Acta de consolidación — régimen de regularización dominial",
+      "codigoActo": "725",
+      "categoria": "ley24374",
+      "pagina": 334,
+      "clasificacionIngreso": [
+        "Administrativo"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Acta de consolidación del dominio que pone fin al proceso de regularización dominial iniciado con el acta de requerimiento. Otorga al beneficiario el título de dominio definitivo sobre el inmueble regularizado conforme Ley 24.374.",
+      "documentos": [
+        "Acta notarial de consolidación",
+        "Carátula rogatoria",
+        "Acta de requerimiento previamente inscripta",
+        "Resolución de consolidación del organismo de aplicación",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe acta de consolidación de dominio (Ley 24.374) a favor de [...], cancelándose la inscripción provisional del acta de requerimiento. Dominio definitivo inscripto.",
+      "orden": 50
+    },
+    {
+      "slug": "ley24374-cesion",
+      "titulo": "Escritura de cesión de acciones y derechos posesorios (art. 6° inc. e)",
+      "codigoActo": "721",
+      "categoria": "ley24374",
+      "pagina": 354,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Acto (art. 2 inc. a)",
+      "rubrosFolioReal": [
+        "Dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": true,
+      "requiereCertCatastral": false,
+      "descripcion": "Escritura de cesión de los derechos posesorios y acciones derivados de la ocupación en el marco del régimen de regularización dominial Ley 24.374. Permite la transmisión de la posición del beneficiario del proceso regularizatorio.",
+      "documentos": [
+        "Primera copia de escritura de cesión de acciones y derechos posesorios",
+        "Carátula rogatoria",
+        "Acta de requerimiento previamente inscripta",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe cesión de acciones y derechos posesorios (Ley 24.374) de [...] a favor de [...], según escritura N° [...], Esc. [...]. Inscripción provisional por 45 días hábiles.",
+      "orden": 51
+    },
+    {
+      "slug": "vivienda-afectacion-acta",
+      "titulo": "Afectación a vivienda por acta administrativa",
+      "codigoActo": "72",
+      "categoria": "vivienda",
+      "pagina": 376,
+      "clasificacionIngreso": [
+        "Administrativo"
+      ],
+      "art2Ley17801": "Restricción (art. 2 inc. c)",
+      "rubrosFolioReal": [
+        "Restricciones al dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Afectación del inmueble al régimen de protección de la vivienda (arts. 244 y ss. CCCN) mediante acta labrada ante el Registro de la Propiedad, el Registro Civil u organismo competente. Protege al inmueble frente a acreedores posteriores a la afectación.",
+      "documentos": [
+        "Acta administrativa de afectación",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Datos del grupo familiar beneficiario",
+        "Comprobante de pago de tasas registrales (si corresponde)"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro restricciones, se inscribe afectación a vivienda (art. 244 CCCN) a favor de [...] y grupo familiar, según acta administrativa de fecha [...]. Sin inscripción provisional.",
+      "orden": 52
+    },
+    {
+      "slug": "vivienda-desafectacion-acta",
+      "titulo": "Desafectación a vivienda por acta administrativa",
+      "codigoActo": "73",
+      "categoria": "vivienda",
+      "pagina": 381,
+      "clasificacionIngreso": [
+        "Administrativo"
+      ],
+      "art2Ley17801": "Restricción (art. 2 inc. c)",
+      "rubrosFolioReal": [
+        "Restricciones al dominio"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Cancelación del régimen de protección de vivienda por acta administrativa, a pedido del titular o por resolución de autoridad competente. Libera al inmueble de la restricción a la disposición.",
+      "documentos": [
+        "Acta administrativa de desafectación",
+        "Carátula rogatoria",
+        "Comprobante de pago de tasas registrales (si corresponde)"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro restricciones, se cancela la afectación a vivienda inscripta con fecha [...], según acta administrativa de fecha [...]. Sin inscripción provisional.",
+      "orden": 53
+    },
+    {
+      "slug": "vivienda-afectacion",
+      "titulo": "Afectación a vivienda",
+      "codigoActo": "500",
+      "categoria": "vivienda",
+      "pagina": 383,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Restricción (art. 2 inc. c)",
+      "rubrosFolioReal": [
+        "Restricciones al dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Afectación del inmueble al régimen de protección de la vivienda mediante escritura pública otorgada por el titular (arts. 244 a 256 CCCN). El bien afectado no puede ser ejecutado por deudas contraídas con posterioridad a la inscripción, salvo excepciones legales.",
+      "documentos": [
+        "Primera copia de escritura de afectación a vivienda",
+        "Carátula rogatoria",
+        "Certificado de dominio vigente",
+        "Datos del grupo familiar beneficiario",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro restricciones, se inscribe afectación a vivienda (art. 244 CCCN) a favor de [...] y grupo familiar [...], según escritura N° [...], Esc. [...]. Sin inscripción provisional.",
+      "orden": 54
+    },
+    {
+      "slug": "vivienda-afectacion-subrogacion",
+      "titulo": "Afectación a vivienda por subrogación real",
+      "codigoActo": "560",
+      "categoria": "vivienda",
+      "pagina": 388,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Restricción (art. 2 inc. c)",
+      "rubrosFolioReal": [
+        "Restricciones al dominio"
+      ],
+      "requiereCertDominio": true,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Traslado de la afectación a vivienda de un inmueble a otro mediante subrogación real (art. 248 CCCN). Permite mantener la protección al adquirir una nueva vivienda con el producido de la venta de la anteriormente afectada.",
+      "documentos": [
+        "Primera copia de escritura de afectación por subrogación real",
+        "Carátula rogatoria",
+        "Certificado de dominio del nuevo inmueble",
+        "Documentación que acredita la procedencia de los fondos del inmueble anterior",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro restricciones, se inscribe afectación a vivienda por subrogación real (art. 248 CCCN) proveniente del folio N° [...], según escritura N° [...], Esc. [...]. Sin inscripción provisional.",
+      "orden": 55
+    },
+    {
+      "slug": "vivienda-desafectacion",
+      "titulo": "Desafectación a vivienda",
+      "codigoActo": "501",
+      "categoria": "vivienda",
+      "pagina": 391,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Restricción (art. 2 inc. c)",
+      "rubrosFolioReal": [
+        "Restricciones al dominio"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Cancelación voluntaria de la afectación a vivienda mediante escritura pública otorgada por el titular y su cónyuge o conviviente (art. 255 CCCN). Libera al inmueble de la protección y habilita su libre disposición.",
+      "documentos": [
+        "Primera copia de escritura de desafectación a vivienda",
+        "Carátula rogatoria",
+        "Comprobante de pago de tasas registrales",
+        "Asentimiento del cónyuge o conviviente (si corresponde)"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro restricciones, se cancela la afectación a vivienda inscripta con fecha [...], según escritura N° [...], Esc. [...]. Sin inscripción provisional.",
+      "orden": 56
+    },
+    {
+      "slug": "vivienda-desafectacion-subrogacion",
+      "titulo": "Desafectación de vivienda con reserva de subrogación real",
+      "codigoActo": "561",
+      "categoria": "vivienda",
+      "pagina": 395,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Restricción (art. 2 inc. c)",
+      "rubrosFolioReal": [
+        "Restricciones al dominio"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Cancelación de la afectación a vivienda con reserva de subrogación real, a efectos de trasladar la protección a un nuevo inmueble que se adquirirá con el producido de la venta. La reserva debe ejercerse dentro del plazo previsto por la norma.",
+      "documentos": [
+        "Primera copia de escritura de desafectación con reserva de subrogación",
+        "Carátula rogatoria",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] rubro restricciones, se cancela la afectación a vivienda inscripta con fecha [...] con reserva de subrogación real (art. 248 CCCN), según escritura N° [...], Esc. [...]. Sin inscripción provisional.",
+      "orden": 57
+    },
+    {
+      "slug": "segundo-testimonio-judicial",
+      "titulo": "Segundo testimonio judicial",
+      "codigoActo": "44",
+      "categoria": "testimonios",
+      "pagina": 432,
+      "clasificacionIngreso": [
+        "Judicial"
+      ],
+      "art2Ley17801": "Documentación complementaria",
+      "rubrosFolioReal": [
+        "Documentación"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Inscripción del segundo o ulterior testimonio de documentos judiciales (sentencias, autos, etc.) que habilita la obtención de nuevos testimonios cuando el original se ha extraviado o deteriorado. Constituye el nuevo título registral.",
+      "documentos": [
+        "Testimonio judicial del segundo testimonio",
+        "Oficio judicial dirigido al Registro",
+        "Constancia del extravío o deterioro del original",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe segundo testimonio judicial del documento inscripto con fecha [...], según auto de fecha [...], Juzgado [...], autos \"[...]\" (CUIJ [...]). Sin inscripción provisional.",
+      "orden": 58
+    },
+    {
+      "slug": "segundo-testimonio-notarial",
+      "titulo": "Segundo testimonio notarial",
+      "codigoActo": "708",
+      "categoria": "testimonios",
+      "pagina": 435,
+      "clasificacionIngreso": [
+        "Notarial"
+      ],
+      "art2Ley17801": "Documentación complementaria",
+      "rubrosFolioReal": [
+        "Documentación"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Inscripción del segundo testimonio de escrituras públicas (compraventas, hipotecas, etc.) ante la pérdida o destrucción del primer testimonio. El escribano interviniente o su sucesor expide el segundo testimonio del protocolo.",
+      "documentos": [
+        "Segunda copia de escritura pública expedida por escribano interviniente o sucesor",
+        "Carátula rogatoria",
+        "Constancia del extravío del primer testimonio (denuncia policial o judicial)",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe segundo testimonio notarial de escritura N° [...] del Esc. [...], de fecha [...], según nueva copia expedida con fecha [...]. Sin inscripción provisional.",
+      "orden": 59
+    },
+    {
+      "slug": "segundo-testimonio-administrativo",
+      "titulo": "Segundo o ulterior testimonio por actuación administrativa",
+      "codigoActo": "92",
+      "categoria": "testimonios",
+      "pagina": 441,
+      "clasificacionIngreso": [
+        "Administrativo"
+      ],
+      "art2Ley17801": "Documentación complementaria",
+      "rubrosFolioReal": [
+        "Documentación"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Inscripción del segundo o ulterior testimonio de documentos administrativos (actas, resoluciones, etc.) ante el extravío o deterioro del original. Se tramita ante el organismo administrativo emisor del documento original.",
+      "documentos": [
+        "Segundo testimonio del documento administrativo",
+        "Resolución del organismo administrativo habilitante",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "En folio real N° [...] se inscribe segundo testimonio administrativo del documento inscripto con fecha [...], según resolución del organismo [...] de fecha [...]. Sin inscripción provisional.",
+      "orden": 60
+    },
+    {
+      "slug": "prorroga-solicitud",
+      "titulo": "Solicitud de prórroga",
+      "codigoActo": "46",
+      "categoria": "inscripciones",
+      "pagina": 444,
+      "clasificacionIngreso": [
+        "Notarial",
+        "Judicial",
+        "Administrativo"
+      ],
+      "art2Ley17801": "Documentación complementaria",
+      "rubrosFolioReal": [
+        "Según el acto principal"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Solicitud de prórroga de la inscripción provisional antes de su vencimiento, cuando no ha podido salvarse la observación registral en el plazo ordinario. Permite mantener la prioridad del acto mientras se subsana el defecto.",
+      "documentos": [
+        "Solicitud de prórroga presentada por el requirente o escribano",
+        "Identificación de la inscripción provisional a prorrogar",
+        "Fundamento de la solicitud (defecto a subsanar)",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "Se anota solicitud de prórroga de inscripción provisional N° [...] de fecha [...], presentada por [...] con fecha [...]. Prórroga otorgada hasta [...].",
+      "orden": 61
+    },
+    {
+      "slug": "prorroga-inscripcion",
+      "titulo": "Prórroga de inscripción provisional",
+      "codigoActo": "710",
+      "categoria": "inscripciones",
+      "pagina": 449,
+      "clasificacionIngreso": [
+        "Notarial",
+        "Judicial",
+        "Administrativo"
+      ],
+      "art2Ley17801": "Documentación complementaria",
+      "rubrosFolioReal": [
+        "Según el acto principal"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Extensión del plazo de la inscripción provisional otorgada por el Registro ante la imposibilidad de subsanar las observaciones en el término ordinario de 45 días hábiles (art. 9 Ley 17.801).",
+      "documentos": [
+        "Primera copia de escritura subsanatoria (si la observación fue salvada parcialmente)",
+        "Solicitud de prórroga previa admitida",
+        "Documentación complementaria según la observación a subsanar",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "Se inscribe prórroga de inscripción provisional N° [...] de fecha [...], por plazo adicional de [...] días hábiles, venciendo el [...].",
+      "orden": 62
+    },
+    {
+      "slug": "anotacion-marginal",
+      "titulo": "Anotación marginal",
+      "codigoActo": "701",
+      "categoria": "anotaciones",
+      "pagina": 453,
+      "clasificacionIngreso": [
+        "Notarial",
+        "Judicial",
+        "Administrativo"
+      ],
+      "art2Ley17801": "Documentación complementaria",
+      "rubrosFolioReal": [
+        "Marginal al asiento principal"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Nota accesoria que se anota al margen de un asiento registral para hacer constar circunstancias que lo modifican, complementan o extinguen sin requerir un nuevo asiento principal. Puede ser de origen notarial, judicial o administrativo.",
+      "documentos": [
+        "Instrumento que da origen a la anotación marginal",
+        "Identificación del asiento registral al que se anota",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "Se anota marginalmente al asiento de folio real N° [...] de fecha [...]: [descripción de la circunstancia a anotar], según [escritura/oficio/resolución] de fecha [...].",
+      "orden": 63
+    },
+    {
+      "slug": "complementaria-aclaratoria",
+      "titulo": "Complementaria, aclaratoria (incluye rectificatoria)",
+      "codigoActo": "702",
+      "categoria": "anotaciones",
+      "pagina": 456,
+      "clasificacionIngreso": [
+        "Notarial",
+        "Judicial",
+        "Administrativo"
+      ],
+      "art2Ley17801": "Documentación complementaria",
+      "rubrosFolioReal": [
+        "Marginal al asiento principal"
+      ],
+      "requiereCertDominio": false,
+      "requiereInscProvisional": false,
+      "requiereCertCatastral": false,
+      "descripcion": "Inscripción de documentos que complementan, aclaran o rectifican asientos registrales existentes, sin modificar la sustancia del acto inscripto. Incluye escrituras aclaratorias, rectificatorias de errores materiales y documentos complementarios.",
+      "documentos": [
+        "Instrumento complementario, aclaratorio o rectificatorio",
+        "Carátula rogatoria (si es notarial)",
+        "Identificación del asiento registral a complementar/rectificar",
+        "Comprobante de pago de tasas registrales"
+      ],
+      "modeloAsiento": "Se inscribe acto complementario/aclaratorio/rectificatorio al asiento de folio real N° [...] de fecha [...], según [escritura N° .../oficio de fecha ...]. Se aclara/rectifica: [descripción].",
+      "orden": 64
+    }
+  ]
+}
